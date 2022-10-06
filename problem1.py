@@ -1,10 +1,13 @@
-# problem 1
+# problem1solution
+
 num1 = int(input("Enter the First Number1 : ")) 
 num2 = int(input("Enter the Second Number2 : "))
-if(num1<=31 and num2<=31):
-    Multiplie = num1 * num2 
-    print(Multiplie)
-elif(num1>=31 and num2>=31):
-    Add =  num1 + num2
-    print(Add)
-else:print("Please Enter the valid number")
+
+def function1(num1, num2):
+    Product = num1 * num2
+    if Product <=1000:
+        return Product
+    else:
+        return num1 + num2
+result = function1(num1, num2)
+print(result)
